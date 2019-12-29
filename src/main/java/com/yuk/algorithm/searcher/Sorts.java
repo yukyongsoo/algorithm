@@ -1,4 +1,4 @@
-package com.yuk.algorithm.sorts;
+package com.yuk.algorithm.searcher;
 
 public class Sorts {
 	// arr.length -1 use end value

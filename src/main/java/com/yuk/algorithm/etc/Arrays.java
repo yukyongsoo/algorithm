@@ -1,4 +1,4 @@
-package com.yuk.algorithm.array;
+package com.yuk.algorithm.etc;
 
 import java.util.PriorityQueue;
 

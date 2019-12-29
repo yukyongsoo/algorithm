@@ -1,4 +1,4 @@
-package com.yuk.algorithm.lists;
+package com.yuk.algorithm.datastracture.lists;
 
 public class LinkList {
 	public ListNode reverseList(ListNode node) {

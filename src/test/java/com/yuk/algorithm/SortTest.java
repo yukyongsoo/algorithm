@@ -1,6 +1,6 @@
 package com.yuk.algorithm;
 
-import com.yuk.algorithm.sorts.Sorts;
+import com.yuk.algorithm.searcher.Sorts;
 import org.junit.Test;
 
 public class SortTest {

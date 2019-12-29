@@ -1,4 +1,4 @@
-package com.yuk.algorithm.dp;
+package com.yuk.algorithm.etc;
 
 public class Pros {
 	public int dp(int[] value) {

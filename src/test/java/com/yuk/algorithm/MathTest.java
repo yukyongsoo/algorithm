@@ -1,7 +1,7 @@
 package com.yuk.algorithm;
 
 import com.yuk.algorithm.maths.Maths;
-import com.yuk.algorithm.numbers.Numbers;
+import com.yuk.algorithm.maths.Numbers;
 import org.junit.Test;
 
 public class MathTest {

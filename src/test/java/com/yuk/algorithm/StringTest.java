@@ -1,6 +1,6 @@
 package com.yuk.algorithm;
 
-import com.yuk.algorithm.strings.Strings;
+import com.yuk.algorithm.etc.Strings;
 import org.junit.Test;
 
 public class StringTest {

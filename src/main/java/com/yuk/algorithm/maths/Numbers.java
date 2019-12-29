@@ -1,4 +1,4 @@
-package com.yuk.algorithm.numbers;
+package com.yuk.algorithm.maths;
 
 import java.util.ArrayList;
 import java.util.List;

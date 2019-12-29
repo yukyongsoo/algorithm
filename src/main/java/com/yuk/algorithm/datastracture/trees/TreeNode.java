@@ -1,4 +1,4 @@
-package com.yuk.algorithm.trees;
+package com.yuk.algorithm.datastracture.trees;
 
 public class TreeNode {
 	TreeNode left;

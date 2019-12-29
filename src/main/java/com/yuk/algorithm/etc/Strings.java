@@ -1,4 +1,4 @@
-package com.yuk.algorithm.strings;
+package com.yuk.algorithm.etc;
 
 public class Strings {
 	public String makepointComma(long value,int point) {
