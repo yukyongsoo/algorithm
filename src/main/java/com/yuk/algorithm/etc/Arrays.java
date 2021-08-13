@@ -22,4 +22,14 @@ public class Arrays {
 	    }
 	    return pq.peek();
 	}
+
+	public void reverseArray(int nums[] , int i , int j){
+		while(i < j){
+			int temp = nums[i];
+			nums[i] = nums[j];
+			nums[j] = temp;
+			i++;
+			j--;
+		}
+	}
 }
