@@ -24,9 +24,22 @@ public class Tree {
 				temp = temp.left;
 			}
 			temp = stack.pop();
+
+			//solution area
 			list.add(temp.value);
+
 			temp = temp.right;	
 		}
 		return list;
+	}
+
+	public void orderIterRecursive(TreeNode node){
+		if(node != null) {
+			//preorder position
+			orderIterRecursive(node.left);
+			//inorder position
+			orderIterRecursive(node.right);
+			//postorder position
+		}
 	}
 }
