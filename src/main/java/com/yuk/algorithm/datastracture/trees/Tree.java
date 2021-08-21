@@ -1,9 +1,6 @@
 package com.yuk.algorithm.datastracture.trees;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.List;
+import java.util.*;
 
 public class Tree {
 	public int getHeight(TreeNode node) {
@@ -31,6 +28,41 @@ public class Tree {
 			temp = temp.right;	
 		}
 		return list;
+	}
+
+	List<List<Integer>> levelOrder(TreeNode root) {
+		Queue<TreeNode> q = new LinkedList<>();
+		List<List<Integer>> answer = new ArrayList<>();
+
+		if (root == null)
+			return answer;
+
+		q.add(root);
+		// Pushing level delimiter into the queue.
+		q.add(null);
+
+		List<Integer> list = new ArrayList<>();
+		while (!q.isEmpty()) {
+			TreeNode curr = q.poll();
+
+			if (curr == null) {
+				answer.add(list);
+				list = new ArrayList<>();
+				if (!q.isEmpty()) {
+					q.add(null);
+				}
+			} else {
+				if (curr.left != null)
+					q.add(curr.left);
+				if (curr.right != null)
+					q.add(curr.right);
+
+				//solution area
+				list.add(curr.value);
+			}
+		}
+
+		return answer;
 	}
 
 	public void orderIterRecursive(TreeNode node){
