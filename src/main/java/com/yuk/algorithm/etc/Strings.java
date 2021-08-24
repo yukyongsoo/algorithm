@@ -1,5 +1,7 @@
 package com.yuk.algorithm.etc;
 
+import java.util.Arrays;
+
 public class Strings {
 	public String makepointComma(long value,int point) {
 		StringBuilder sb = new StringBuilder();
@@ -14,6 +16,16 @@ public class Strings {
 			index++;
 		}
 		return sb.reverse().toString();
+	}
+
+	public boolean findAnagram(String source, String target) {
+		char[] sourceArray = source.toCharArray();
+		Arrays.sort(sourceArray);
+
+		char[] targetArray = target.toCharArray();
+		Arrays.sort(targetArray);
+
+		return Arrays.equals(sourceArray, targetArray);
 	}
 	
 	public int atoi(String data){
